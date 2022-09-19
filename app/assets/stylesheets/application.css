@@ -25,6 +25,9 @@ body {
   margin: 33px;
 }
 
+
+
+
 p,ol,ul,tb {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -61,3 +64,17 @@ tr {
 th {
   padding-bottom: 5px;
 }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+}
+
+#notice {
+    color: green;
+}
+
+

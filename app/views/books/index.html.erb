@@ -1,4 +1,3 @@
-
 <h1>
   Books
 </h1>
@@ -10,5 +9,25 @@
       <th colspan="3"></th>
     </tr>
   </thead>
+
+
 </table>
+
+
+<h2>New book</h2>
+
+<%= form_with model: @book, url: '/books', method: :post do |f| %>
+  <div class="field">
+    <lavel for="book_title">Title</lavel>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <level for="book_body">Body</level>
+    <%= f.text_area :body %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Create Book' %>
+  </div>
+
+<% end %>
 
