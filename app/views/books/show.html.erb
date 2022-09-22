@@ -1,10 +1,18 @@
 
-<p id="notice">Book was successfully created.</p>
 
+<body>
+  <table>
+  <p id="notice">Book was successfully created.</p>
 
-<% @books.each do |book| %>
+  <% @book.each do |book| %>
 
-  <p>タイトル</p>
-  <span><%= book.title %></span>
+    <p>title:</p>
+    <span><%= book.title %></span>
 
-<% end %>
+  <% end %>
+  </table>
+</body>
+
+<a class="edit_100633" href="/books/100633/edit">Edit</a>
+ |
+<a class="back" href="/books">Back</a>
