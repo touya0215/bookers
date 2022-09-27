@@ -1,18 +1,19 @@
 
 
+
 <body>
-  <table>
-  <p id="notice">Book was successfully created.</p>
+  <p id="notice"></p>
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+<p>
+  <strong>body:</strong>
+  <%= @book.body %>
+</p>
 
-  <% @book.each do |book| %>
-
-    <p>title:</p>
-    <span><%= book.title %></span>
-
-  <% end %>
-  </table>
+<%= link_to"edit","/books/#{@book.id}/edit" %>
+ |
+<%= link_to"back","/books" %>
 </body>
 
-<a class="edit_100633" href="/books/100633/edit">Edit</a>
- |
-<a class="back" href="/books">Back</a>
