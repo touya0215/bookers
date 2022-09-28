@@ -79,8 +79,20 @@ label {
   display: block;
 }
 
-#notice {
-    color: green;
+
+.notifications {
+  color: $white;
+  text-align: center;
+
 }
+.notice {
+    color: green;
+  }
+
+  .alert {
+    background-color: alert_orange;
+  }
+
+
 
 
